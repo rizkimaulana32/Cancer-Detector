@@ -1,0 +1,42 @@
+<com.google.android.material.carousel.MaskableFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="8dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivNews"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:contentDescription="@string/news"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/gradient_back"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Title news"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            android:layout_margin="16dp"/>
+    </FrameLayout>
+</com.google.android.material.carousel.MaskableFrameLayout>
